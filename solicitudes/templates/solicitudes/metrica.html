@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Cantidad Reciclada por Material{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Cantidad Total Reciclada por Material</h2>
+
+<table class="table table-bordered table-striped">
+  <thead class="table-secondary">
+    <tr>
+      <th>Código</th>
+      <th>Material</th>
+      <th>Total Reciclado</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in datos %}
+      <tr>
+        <td>{{ item.material__codigo }}</td>
+        <td>{{ item.material__nombre }}</td>
+        <td>{{ item.total_rec }}</td>
+      </tr>
+    {% empty %}
+      <tr>
+        <td colspan="3" class="text-center">No hay datos de reciclaje.</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

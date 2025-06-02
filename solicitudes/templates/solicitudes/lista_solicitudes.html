@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Mis Solicitudes{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Mis Solicitudes</h2>
+
+<!-- Botón para crear nueva solicitud -->
+<a href="{% url 'nueva_solicitud' %}" class="btn btn-success mb-3">
+  + Solicitar retiro de material reciclable
+</a>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Material</th>
+      <th>Cantidad</th>
+      <th>Fecha Estimada</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for solicitud in solicitudes %}
+    <tr>
+      <td>{{ solicitud.material.nombre }}</td>
+      <td>{{ solicitud.cantidad }}</td>
+      <td>{{ solicitud.fecha_estimada }}</td>
+      <td>{{ solicitud.get_estado_display }}</td>
+    </tr>
+    {% empty %}
+    <tr>
+      <td colspan="4" class="text-center">No tienes solicitudes registradas.</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

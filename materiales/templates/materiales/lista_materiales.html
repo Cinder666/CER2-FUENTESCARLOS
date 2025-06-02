@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}Materiales Reciclables{% endblock %}
+
+{% block content %}
+<h2 class="text-success mb-4">Materiales Aceptados</h2>
+
+<div class="d-flex flex-wrap gap-4 justify-content-center">
+
+  <!--Papel y cartón -->
+  <div class="card shadow" style="width: 18rem;">
+    <img src="{% static 'img/papel_carton.jpg' %}" class="card-img-top" alt="Papel y cartón">
+    <div class="card-body">
+      <h5 class="card-title">Papel y cartón</h5>
+      <p class="card-text">
+        Incluye cajas, hojas, periódicos, cuadernos (sin espirales ni plásticos).
+      </p>
+    </div>
+  </div>
+
+  <!--Plásticos reciclables -->
+  <div class="card shadow" style="width: 18rem;">
+    <img src="{% static 'img/plasticos.jpg' %}" class="card-img-top" alt="Plásticos reciclables">
+    <div class="card-body">
+      <h5 class="card-title">Plásticos reciclables</h5>
+      <p class="card-text">
+        Botellas PET, envases de alimentos, tapas plásticas. No se aceptan bolsas ni film.
+      </p>
+    </div>
+  </div>
+
+  <!--Vidrios -->
+  <div class="card shadow" style="width: 18rem;">
+    <img src="{% static 'img/Vidrios.jfif' %}" class="card-img-top" alt="Vidrios">
+    <div class="card-body">
+      <h5 class="card-title">Vidrios</h5>
+      <p class="card-text">
+        Botellas y frascos sin tapa. No se reciben vidrios rotos ni espejos.
+      </p>
+    </div>
+  </div>
+
+  <!--Latas -->
+  <div class="card shadow" style="width: 18rem;">
+    <img src="{% static 'img/Latas.jpg' %}" class="card-img-top" alt="Latas">
+    <div class="card-body">
+      <h5 class="card-title">Latas</h5>
+      <p class="card-text">
+        Latas de aluminio y hojalata, como bebidas o conservas.
+      </p>
+    </div>
+  </div>
+
+  <!--Electrónicos pequeños -->
+  <div class="card shadow" style="width: 18rem;">
+    <img src="{% static 'img/Electronicos.jpg' %}" class="card-img-top" alt="Electrónicos pequeños">
+    <div class="card-body">
+      <h5 class="card-title">Electrónicos pequeños</h5>
+      <p class="card-text">
+        Celulares, tablets, teclados, cargadores. No se aceptan refrigeradores ni TV.
+      </p>
+    </div>
+  </div>
+
+  <!--Textiles -->
+  <div class="card shadow" style="width: 18rem;">
+    <img src="{% static 'img/textiles.jfif' %}" class="card-img-top" alt="Textiles">
+    <div class="card-body">
+      <h5 class="card-title">Textiles</h5>
+      <p class="card-text">
+        Ropa en buen estado, sábanas, cortinas. No se aceptan prendas sucias o rotas.
+      </p>
+    </div>
+  </div>
+
+  <!--Voluminosos reciclables -->
+  <div class="card shadow" style="width: 18rem;">
+    <img src="{% static 'img/voluminosos.jpg' %}" class="card-img-top" alt="Voluminosos reciclables">
+    <div class="card-body">
+      <h5 class="card-title">Voluminosos reciclables</h5>
+      <p class="card-text">
+        Muebles, colchones, bicicletas, palets.
+      </p>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
+

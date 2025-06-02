@@ -1,0 +1,31 @@
+/* Forzar fondo verde en navbar */
+.navbar {
+  background-color: #28a745 !important; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Texto y links blancos */
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Cambiar color de links al pasar mouse */
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #d4edda !important; /* Verde claro */
+}
+
+/* Botones de cerrar sesión estilo */
+.navbar .btn-outline-light {
+  border-color: #fff !important;
+  color: #fff !important;
+}
+
+.navbar .btn-outline-light:hover {
+  background-color: #fff !important;
+  color: #28a745 !important;
+  box-shadow: 0 0 10px #28a745;
+}

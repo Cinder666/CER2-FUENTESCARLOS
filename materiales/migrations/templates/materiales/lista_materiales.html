@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Materiales{% endblock %}
+{% block content %}
+<h2>Materiales aceptados</h2>
+<ul>
+  {% for mat in materiales %}
+    <li><strong>{{ mat.nombre }}</strong>: {{ mat.descripcion }}</li>
+  {% empty %}
+    <li>No hay materiales registrados.</li>
+  {% endfor %}
+</ul>
+{% endblock %}
