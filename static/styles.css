@@ -1,4 +1,4 @@
-/* Forzar fondo verde en navbar */
+/* fondo verde en navbar */
 .navbar {
   background-color: #28a745 !important; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -18,14 +18,4 @@
   color: #d4edda !important; /* Verde claro */
 }
 
-/* Botones de cerrar sesión estilo */
-.navbar .btn-outline-light {
-  border-color: #fff !important;
-  color: #fff !important;
-}
 
-.navbar .btn-outline-light:hover {
-  background-color: #fff !important;
-  color: #28a745 !important;
-  box-shadow: 0 0 10px #28a745;
-}
